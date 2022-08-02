@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Артём Николаев](https://up.htmlacademy.ru/adaptive/26/user/2019485).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Глебов](https://htmlacademy.ru/profile/beast).
 
 ---
 
