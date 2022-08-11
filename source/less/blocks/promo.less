@@ -5,7 +5,11 @@
 }
 
 .promo__wrapper {
-  background-color: rgba(104, 183, 56, 0.85);
+  background: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: @tablet-width) {
+    background: #ffffff;
+  }
 }
 
 .promo__title {
@@ -14,6 +18,10 @@
   line-height: 36px;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+  }
 }
 
 .promo__description {
@@ -23,6 +31,10 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+  }
 }
 
 .promo__program-link {

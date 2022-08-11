@@ -4,6 +4,17 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 600px;
+  }
+}
+
+.live-example__wrapper {
+  @media (min-width: @desktop-width) {
+    height: 436px;
+  }
 }
 
 .live-example__title {
@@ -16,6 +27,22 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+}
+
+.stats__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.stats__wrapper {
+  @media (min-width: @desktop-width) {
+    width: 436px;
+  }
 }
 
 .stats__item-value {
