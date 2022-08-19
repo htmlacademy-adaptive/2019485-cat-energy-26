@@ -13,15 +13,17 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-    <a href="#" class="main-header__logo-image">
-      <img src="../source/img/svg/mobile-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
+      <div class="header-logo__wrapper">
+    <a href="#" class="main-header__logo--image">
+      <img src="../img/svg/mobile-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
     </a>
-    <a href="" class="main-header__logo-text">
-      <img src="../source/img/svg/text-logo.svg" width="33" height="37" alt="Cat Energy">
+    <a href="" class="main-header__logo--text">
+      <img src="../img/svg/text-logo.svg" width="33" height="37" alt="Cat Energy">
     </a>
-    <nav class="main-nav">
+  </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden"></span> <!--Открыть меню-->
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -125,7 +127,7 @@
       </div>
       </div>
       <div class="example-picture__wrapper">
-        <img src="../source/img/jpg/cat-before.jpg" alt="Фото кота до">
+        <img src="../img/jpg/cat-before.jpg" alt="Фото кота до">
       </div>
       <div class="example-range__wrapper">
         <span class="example-range__description">Было</span>
@@ -173,6 +175,7 @@
     </div>
   </footer>
   <!-- Footer End -->
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
