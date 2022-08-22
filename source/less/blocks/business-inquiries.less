@@ -1,4 +1,8 @@
 .business-inquiries__wrapper {
+  display: flex;
+  padding: 26px 20px;
+  justify-content: space-between;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -10,6 +14,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #111111;
+  }
 }
 
 .business-inquiries__description {
@@ -17,4 +29,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+  }
 }

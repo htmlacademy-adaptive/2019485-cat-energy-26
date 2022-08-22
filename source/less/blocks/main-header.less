@@ -18,10 +18,15 @@
 .header-logo__wrapper {
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
 
 .main-header__logo--image {
   text-decoration: none;
+}
+
+.main-header__logo--text {
+  margin: 0 auto;
 }
 
 .main-header__logo--image img {
@@ -46,8 +51,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -40px;
-  right: 0;
+  top: -45px;
+  right: 20px;
   z-index: 2;
   display: block;
   width: 70px;
@@ -186,7 +191,7 @@
   }
 
   .site-list__link {
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -198,11 +203,11 @@
     }
 
     &:disabled {
-      opacity: 0.3
+      opacity: 0.3;
     }
 
     &:active {
-      border-bottom: 2px solid #68B738;
+      border-bottom: 2px solid #68b738;
     }
   }
 }

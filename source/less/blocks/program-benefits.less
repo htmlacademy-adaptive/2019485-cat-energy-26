@@ -6,20 +6,234 @@
   line-height: 18px;
 }
 
+.program-benefits__wrapper {
+  padding: 0 20px;
+
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+    justify-content: center;
+  }
+}
+
+.program-benefits__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  padding: 0 23px 0 100px;
+
+  &:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 29px 57px 0;
+    min-width: 230px;
+    min-height: 280px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .program-benefits__item--organic::before {
+    position: absolute;
+    content: "1";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    right: 145px;
+    top: 10px;
+  }
+
+  .program-benefits__item--powder::before {
+    position: absolute;
+    content: "2";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    right: 145px;
+    top: 10px;
+  }
+
+  .program-benefits__item--food::before {
+    position: absolute;
+    content: "3";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    right: 145px;
+    top: 10px;
+  }
+
+  .program-benefits__item--time::before {
+    position: absolute;
+    content: "4";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    right: 145px;
+    top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-benefits__item--organic::before {
+    position: absolute;
+    content: "1";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    right: 55px;
+    top: 10px;
+  }
+
+  .program-benefits__item--powder::before {
+    position: absolute;
+    content: "2";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    right: 45px;
+    top: 10px;
+  }
+
+  .program-benefits__item--food::before {
+    position: absolute;
+    content: "3";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    right: 30px;
+    top: 10px;
+  }
+
+  .program-benefits__item--time::before {
+    position: absolute;
+    content: "4";
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    right: 35px;
+    top: 10px;
+  }
+}
+
+.program-benefits__description {
+  position: relative;
+  margin: 0;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+  }
+}
+
 .program-benefits__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0 0 40px 0;
+}
+
+.program-benefits__description--organic::before {
+  position: absolute;
+  content: "";
+  background: url("../img/svg/benefits-organic-icon-tablet.svg") no-repeat center;
+  width: 60px;
+  height: 60px;
+  left: -100px;
+  top: -3px;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -100px;
+    left: 0;
+  }
+}
+
+.program-benefits__description--powder::before {
+  position: absolute;
+  content: "";
+  background: url("../img/svg/benefits-powder-icon-tablet.svg") no-repeat center;
+  width: 60px;
+  height: 60px;
+  left: -100px;
+  top: -3px;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -100px;
+    left: 0;
+  }
+}
+
+.program-benefits__description--food::before {
+  position: absolute;
+  content: "";
+  background: url("../img/svg/benefits-food-icon-tablet.svg") no-repeat center;
+  width: 60px;
+  height: 60px;
+  left: -100px;
+  top: -3px;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -100px;
+    left: 0;
+  }
+}
+
+.program-benefits__description--time::before {
+  position: absolute;
+  content: "";
+  background: url("../img/svg/benefits-time-icon-tablet.svg") no-repeat center;
+  width: 60px;
+  height: 60px;
+  left: -100px;
+  top: -3px;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -100px;
+    left: 0;
+  }
 }
 
 .program-benefits__list {
-  margin: 0;
+  margin: 0 0 49px 0;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
     display: flex;
   }
 }
