@@ -6,6 +6,8 @@
 
 .promo__wrapper {
   background: rgba(104, 183, 56, 0.85);
+  height: 302px;
+  margin: 0 0 138px 0;
 
   @media (min-width: @tablet-width) {
     background: #ffffff;
@@ -17,7 +19,10 @@
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
-  text-transform: uppercase;
+  margin: 0;
+  padding: 27px 35px;
+  text-align: center;
+
 
   @media (min-width: @tablet-width) {
     color: #000000;
@@ -31,13 +36,24 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     color: #000000;
   }
 }
 
+.promo-program-link__wrapper {
+  padding: 0 20px;
+}
+
 .promo__program-link {
+  margin: 0 auto;
+  display: block;
+  height: 40px;
+  text-align: center;
+  padding: 10px 0;
+  box-sizing: border-box;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -46,4 +62,8 @@
   background-color: #68b738;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+  }
 }
