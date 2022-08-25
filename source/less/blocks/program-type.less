@@ -69,13 +69,28 @@
     margin: 0 0 24px 0;
 
     &::before {
-      display: none;
+      position: absolute;
+      content: "";
+      background: url("../img/svg/program-slim-icon-tablet.svg") no-repeat center;
+      width: 200px;
+      height: 211px;
+      left: 394px;
     }
   }
 
   @media (min-width: @desktop-width) {
     text-align: center;
     margin: 0 0 73px 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background: url("../img/svg/program-slim-icon-desktop.svg") no-repeat center;
+      width: 100px;
+      height: 106px;
+      left: -35px;
+      top: -30px;
+    }
   }
 }
 
@@ -89,7 +104,7 @@
 
   @media (min-width: @tablet-width) {
     text-align: start;
-    min-width: 340px;
+    width: 340px;
     margin: 0 0 48px 0;
     font-weight: 400;
     font-size: 16px;
@@ -178,13 +193,28 @@
     margin: 0 0 24px 0;
 
     &::before {
-      display: none;
+      position: absolute;
+      content: "";
+      background: url("../img/svg/program-pro-icon-tablet.svg") no-repeat center;
+      width: 268px;
+      height: 200px;
+      left: 360px;
     }
   }
 
   @media (min-width: @desktop-width) {
     text-align: center;
     margin: 0 0 73px 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background: url("../img/svg/program-pro-icon-desktop.svg") no-repeat center;
+      width: 134px;
+      height: 100px;
+      left: -35px;
+      top: -30px;
+    }
   }
 }
 
@@ -198,7 +228,7 @@
 
   @media (min-width: @tablet-width) {
     text-align: start;
-    min-width: 340px;
+    width: 340px;
     margin: 0 0 48px 0;
     font-weight: 400;
     font-size: 16px;
