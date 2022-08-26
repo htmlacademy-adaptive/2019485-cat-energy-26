@@ -7,6 +7,9 @@
   content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="./css/style.css" rel="stylesheet">
+  <link rel="icon" sizes="32x32" href="favicon.ico">
+  <link rel="icon" href="../img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <!-- Header Start -->
 
@@ -15,7 +18,11 @@
     <div class="main-header__wrapper">
       <div class="header-logo__wrapper">
     <a href="#" class="main-header__logo--image">
-      <img src="../img/svg/mobile-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
+      <picture>
+        <source media="(min-width: 1440px" srcset="../img/svg/tablet-logo.svg">
+        <source media="(min-width: 768px" srcset="../img/svg/tablet-logo.svg">
+        <img class="header-logo__picture" src="../img/svg/mobile-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
+    </picture>
     </a>
     <a href="" class="main-header__logo--text">
       <img src="../img/svg/text-logo.svg" width="33" height="37" alt="Cat Energy">
@@ -45,10 +52,17 @@
   <!-- Main Start -->
   <main class="main-container">
     <section class="promo">
-      <div class="promo__wrapper">
-        <h1 class="promo__title">Функциональное
+      <div class="promo-hero__wrapper">
+        <div class="promo__wrapper">
+        <h1 class="promo__title">Функциональное <br>
           питание для котов</h1>
         <p class="promo__description">Занялся собой? Займись котом!</p>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="../img/png/promo-cat-food-desktop.png, ../img/png/promo-cat-food-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="../img/png/promo-cat-food-tablet.png, ../img/png/promo-cat-food-tablet@2x.png 2x">
+        <img class="promo__image" src="../img/png/promo-cat-food.png" srcset="../img/png/promo-cat-food@2x.png 2x" width="280" height="270" alt="Банка Cat Energy Pro">
+      </picture>
+      </div>
       </div>
       <div class="promo-program-link__wrapper">
       <a href="#" class="promo__program-link">Подобрать программу</a>
@@ -129,7 +143,20 @@
       </div>
       </div>
       <div class="example-picture__wrapper">
-        <img src="../img/jpg/cat-before.jpg" alt="Фото кота до">
+        <div class="picture-before">
+          <img src="../img/png/cat-slider-before.png" width="280" height="256" alt="Фото кота до">
+        </div>
+        <div class="range-slider">
+          <div class="range-slider__toggle">
+            <button class="range-slider__button" type="button">
+              <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="38" height="38" rx="19" fill="#fff"/><path d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z" fill="#666"/><rect x="1" y="1" width="38" height="38" rx="19" stroke="#666" stroke-width="2"/></svg>
+            </button>
+            <div class="range-slider__track"></div>
+        </div>
+        </div>
+        <div class="picture-after">
+          <img src="../img/png/cat-slider-after.png" width="280" height="256" alt="Фото кота после">
+        </div>
       </div>
       <div class="example-range__wrapper">
         <span class="example-range__description">Было</span>

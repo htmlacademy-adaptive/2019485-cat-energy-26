@@ -1,16 +1,75 @@
 .promo {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+.promo-hero__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 302px;
+    z-index: -1;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/png/promo-background-cat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 207px 0 87px;
+    justify-content: center;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 694px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 138px 0;
+
+    &::before {
+      display: contents;
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 694px;
+      top: -175px;
+      right: 0;
+      z-index: -2;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/png/index-background-desktop.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-color: rgba(104, 183, 56, 0.85);
+    }
+  }
 }
 
 .promo__wrapper {
-  background: rgba(104, 183, 56, 0.85);
-  height: 302px;
-  margin: 0 0 138px 0;
+  padding: 27px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
-    background: #ffffff;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }
 
@@ -19,13 +78,18 @@
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
-  margin: 0;
-  padding: 27px 35px;
   text-align: center;
+  width: 250px;
+  margin: 0 0 25px 0;
 
 
   @media (min-width: @tablet-width) {
+    margin: 0 0 41px 0;
+    text-align: start;
+    font-size: 60px;
+    line-height: 60px;
     color: #000000;
+    width: 100%;
   }
 }
 
@@ -37,14 +101,36 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 0 30px 0;
 
   @media (min-width: @tablet-width) {
     color: #000000;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
   }
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 .promo-program-link__wrapper {
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 230px;
+    left: 257px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 65px;
+  }
 }
 
 .promo__program-link {

@@ -175,3 +175,38 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.range-slider {
+  position: relative;
+}
+
+.range-slider__toggle {
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.range-slider__button {
+  position: absolute;
+  top: 40%;
+  right: -24px;
+  border: 0;
+  background: transparent;
+  fill: #666666;
+
+  &:hover {
+    fill: #68B738;
+  }
+}
+
+
+.range-slider__button:hover+.range-slider__track {
+  background-color: #68B738;
+}
+
+.range-slider__track {
+  width: 4px;
+  height: 260px;
+  border-radius: 2px;
+  background-color: #666666;
+}
