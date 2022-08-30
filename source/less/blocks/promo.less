@@ -4,6 +4,10 @@
   font-style: normal;
   font-weight: 400;
   margin: 0 0 20px 0;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .promo-hero__wrapper {
@@ -37,7 +41,6 @@
     position: relative;
     display: flex;
     justify-content: flex-start;
-    margin: 0 0 138px 0;
 
     &::before {
       display: contents;
@@ -45,7 +48,7 @@
       content: "";
       width: 50%;
       height: 694px;
-      top: -175px;
+      top: -285px;
       right: 0;
       z-index: -2;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/png/index-background-desktop.png");
@@ -116,11 +119,15 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    right: -815px;
+    top: -328px;
+  }
 }
 
 .promo-program-link__wrapper {
-  padding: 0 20px;
-
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 230px;
