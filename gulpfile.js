@@ -5,11 +5,11 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import csso from 'postcss-csso';
-import rename from 'gulp-rename'
-import terser from 'gulp-terser'
-import squoosh from 'gulp-squoosh'
-import libsquoosh from 'gulp-libsquoosh'
-import svgo from 'gulp-svgo'
+import rename from 'gulp-rename';
+import terser from 'gulp-terser';
+import htmlmin from 'gulp-htmlmin';
+import libsquoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgo';
 import {deleteAsync} from 'del';
 
 // Styles
@@ -27,6 +27,12 @@ const styles = () => {
     .pipe(browser.stream());
 }
 
+//Html
+const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest('build'));
+}
 // Script
 
 const scripts = () => {
@@ -84,6 +90,12 @@ done();
 
 export const clean = () => deleteAsync('./build');
 
+// Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+  }
 // Server
 
 const server = (done) => {
@@ -102,8 +114,9 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
-}
+  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/*.html', gulp.series(html, reload));
+  }
 
 //Build
 export const build = gulp.series (
@@ -113,6 +126,7 @@ export const build = gulp.series (
   gulp.parallel(
     styles,
     scripts,
+    html,
     svg,
     createWebp
 ));
@@ -125,6 +139,7 @@ export default gulp.series (
   copyImages,
   gulp.parallel(
     styles,
+    html,
     scripts,
     svg,
     createWebp
