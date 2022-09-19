@@ -1,0 +1,347 @@
+.extra-product {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 31px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 110px;
+  }
+}
+
+.extra-product__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.extra-product__title {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 2px;
+    background-color: #68b738;
+    right: -10px;
+    top: 15px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 38px;
+    margin: 0 0 80px 0;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      width: 328px;
+      right: -30px;
+      top: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: #68b738;
+      left: -40px;
+      top: 20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+
+    &::before {
+      width: 957px;
+      right: -100px;
+      top: 20px;
+    }
+  }
+}
+
+.extra-product__item {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      position: absolute;
+      width: 895px;
+      height: 1px;
+      content: "";
+      background-color: #cdcdcd;
+      top: -17px;
+      left: -36px;
+    }
+
+    &:last-child {
+      &::before {
+        position: absolute;
+        width: 895px;
+        height: 1px;
+        content: "";
+        background-color: #cdcdcd;
+        top: 140px;
+        left: -36px;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    position: relative;
+
+    &::after {
+      left: 0;
+    }
+
+    &:last-child {
+      &::before {
+        top: 60px;
+        left: 0;
+      }
+    }
+  }
+}
+
+.extra-product__item-wrapper {
+  @media (min-width: @tablet-width) {
+    margin: 0 0 41px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
+    padding: 0;
+  }
+}
+
+
+.extra-product__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0 0 35px 0;
+
+  @media (min-width: @desktop-width) {
+    width: 896px;
+  }
+}
+
+.extra-product__item--title {
+  margin: 0 0 13px 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 163px 0 0;
+  }
+}
+
+.title-water {
+  @media (min-width: @desktop-width) {
+    margin: 0 195px 0 0;
+  }
+}
+
+.title-milk {
+  @media (min-width: @desktop-width) {
+    margin: 0 256px 0 0;
+  }
+}
+
+.title-vitamins {
+  @media (min-width: @desktop-width) {
+    margin: 0 234px 0 0;
+  }
+}
+
+.description-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-product__item--description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin: 0 0 15px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 49px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 112px 0 0;
+  }
+}
+
+.description-water {
+  @media (min-width: @desktop-width) {
+    margin: 0 187px 0 0;
+  }
+}
+
+.description-milk {
+  @media (min-width: @desktop-width) {
+    margin: 0 196px 0 0;
+  }
+}
+
+.description-vitamins {
+  @media (min-width: @desktop-width) {
+    margin: 0 120px 0 0;
+  }
+}
+
+.extra-product__item--price {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 38px 0 0;
+  }
+}
+
+.extra-product-button__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
+}
+
+.extra-product__button {
+  border: 0;
+  background-color: #68b738;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 109px;
+  text-transform: uppercase;
+  margin: 0 0 25px 0;
+  cursor: pointer;
+
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    background: #5eaa2f;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 632px;
+    margin: 0 auto 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    padding: 0;
+    text-align: center;
+    height: 40px;
+  }
+}
+
+.gift {
+  position: relative;
+  width: 286px;
+  height: 286px;
+  z-index: -1;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/png/gift-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background: url("../img/catalog/svg/gift-icon.svg") no-repeat center;
+    right: 105px;
+    top: 58px;
+
+    @media (min-width: @tablet-width) {
+      left: 77px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/png/gift-background-tablet.png");
+    width: 707px;
+    height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/png/gift-background-desktop.png");
+    width: 245px;
+    height: 288px;
+  }
+}
+
+.gift__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+  width: 161px;
+  padding: 187px 61px 43px 58px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 124px 69px 422px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 184px 43px 42px 40px;
+  }
+}

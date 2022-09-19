@@ -266,3 +266,21 @@
     margin: 0 94px 0 0;
   }
 }
+
+.form-link {
+  color: #000000;
+}
+
+.form-link--active {
+  color: #000000;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #68b738;
+  }
+}
