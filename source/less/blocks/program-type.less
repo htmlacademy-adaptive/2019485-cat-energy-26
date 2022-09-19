@@ -127,6 +127,17 @@
   text-decoration: none;
   color: #000000;
 
+  &:hover {
+    &::before {
+      background: url("../img/svg/program-type-arrow-hover.svg") no-repeat center;
+    }
+  }
+
+  &:active {
+    color: #000000;
+    opacity: 0.3;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
@@ -250,6 +261,17 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    &::before {
+      background: url("../img/svg/program-type-arrow-hover.svg") no-repeat center;
+    }
+  }
+
+  &:active {
+    color: #000000;
+    opacity: 0.3;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;

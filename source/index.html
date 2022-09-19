@@ -6,7 +6,7 @@
   <meta name="viewport"
   content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
   <link rel="icon" sizes="32x32" href="favicon.ico">
   <link rel="icon" href="../img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -19,8 +19,8 @@
       <div class="header-logo__wrapper">
     <a href="#" class="main-header__logo--image">
       <picture>
-        <source media="(min-width: 1440px" srcset="../img/svg/tablet-logo.svg">
-        <source media="(min-width: 768px" srcset="../img/svg/tablet-logo.svg">
+        <source media="(min-width: 1440px)" srcset="../img/svg/tablet-logo.svg">
+        <source media="(min-width: 768px)" srcset="../img/svg/tablet-logo.svg">
         <img class="header-logo__picture" src="../img/svg/mobile-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
     </picture>
     </a>
@@ -35,18 +35,18 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#" class="site-list__link">Главная</a>
+            <a href="index.html" class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">Каталог продукции</a>
+            <a href="catalog.html" class="site-list__link">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">Подбор программы</a>
+            <a href="form.html" class="site-list__link">Подбор программы</a>
           </li>
         </ul>
       </div>
-    </div>
     </nav>
+    </div>
   </header>
   <!-- Header End -->
   <!-- Main Start -->
@@ -68,7 +68,7 @@
       </div>
       </div>
       <div class="promo-program-link__wrapper">
-      <a href="#" class="promo__program-link">Подобрать программу</a>
+      <a href="form.html" class="promo__program-link">Подобрать программу</a>
     </div>
     </section>
     <section class="program-type">
@@ -132,18 +132,17 @@
           <ul class="stats__list">
             <li class="stats__item">
               <p class="stats__item-value">5 кг</p>
-              <p class="stats__item-index">снижение веса</p>
+              <p class="stats__item-index">снижение <br> веса</p>
             </li>
             <li class="stats__item">
-              <p class="stats__item-value">60 дней</p>
-              <p class="stats__item-index">затрачено времени</p>
+              <p class="stats__item-value value-days">60 дней</p>
+              <p class="stats__item-index index-days">затрачено времени</p>
             </li>
           </ul>
           <div class="cost">
             <p class="cost__value">Затраты на питание: 15 000 руб.</p>
           </div>
         </div>
-      </div>
       </div>
       <div class="example-picture__wrapper">
         <div class="picture-before">
@@ -163,10 +162,6 @@
           <img src="../img/png/cat-slider-after.png" width="200" height="256" alt="Фото кота после">
         </div>
       </div>
-      <div class="example-range__wrapper">
-        <span class="example-range__description">Было</span>
-        <span class="example-range__description">Cтало</span>
-      </div>
     </section>
     <section class="business-inquiries">
       <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
@@ -179,7 +174,7 @@
     </section>
     <section class="location-point">
       <h2 class="visually-hidden">Геопозиция</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661209436689!5m2!1sru!2sru" width="320" height="362"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661209436689!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <!-- Main End -->
