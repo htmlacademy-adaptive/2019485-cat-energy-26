@@ -1,13 +1,37 @@
-.program-type {
+.program {
+  width: 280px;
+  margin: 25px auto 0 auto;
   padding: 0 20px;
-  margin: 0 0 39px 0;
 
   @media (min-width: @tablet-width) {
+    width: 708px;
     padding: 0 30px;
+    margin: 55px auto 0;
   }
 
   @media (min-width: @desktop-width) {
+    width: 1440px;
     padding: 0 110px;
+  }
+}
+
+.form-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 65px;
+  justify-content: center;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 709px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1220px;
+    margin: 53px auto 8px;
   }
 }
 
@@ -20,31 +44,32 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 0 71px;
+    width: 708px;
+    padding: 0 41px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
     display: flex;
     flex-direction: row;
-    margin: 0 auto 69px;
-    padding: 0 110px;
+    margin: 0 auto 51px;
+    padding: 0;
   }
 }
 
 .program-title__wrapper {
   width: 310px;
-  margin: 0 auto;
+  margin: 0 0 39px 0;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    padding: 0 69px;
-    width: 630px;
+    padding: 0 39px;
+    width: 708px;
+    margin: 0 0 63px 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding: 0 110px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -60,14 +85,14 @@
   line-height: 36px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 54px 0;
+    margin: 0 0 56px 0;
     font-size: 60px;
     line-height: 60px;
   }
 }
 
 .program-type__description {
-  margin: 0 0 39px 0;
+  margin: 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -77,7 +102,7 @@
 
   @media (min-width: @tablet-width) {
     width: 323px;
-    margin: 0 0 66px 0;
+    margin: 0;
     font-size: 20px;
     line-height: 30px;
   }
@@ -87,11 +112,14 @@
   display: flex;
   flex-direction: column;
   border: 0;
-  margin: 0 0 50px;
+  margin: 0 0 19px;
   align-items: center;
+  padding: 0;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    margin: 0 0 68px;
   }
 
   @media (min-width: @desktop-width) {
@@ -106,20 +134,19 @@
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   padding: 20px 0;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 8px;
   width: 330px;
 
   @media (min-width: @tablet-width) {
-    width: 640px;
+    width: 708px;
     border: 1px solid #e7e7e7;
-    margin: 0 auto 71px;
+    margin: 0 auto 49px;
   }
 
   @media (min-width: @desktop-width) {
     width: 568px;
     display: flex;
-    align-items: center;
-    padding: 25px 0 25px 28px;
+    padding: 34px 0 8px 20px;
     margin: 0;
     border: 1px solid #e7e7e7;
     height: 200px;
@@ -137,14 +164,18 @@
   padding-left: 36px;
   margin: 0 0 20px 0;
 
+  @media (min-width: @tablet-width) {
+    padding-left: 54px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin: 0 0 13px;
+    margin: 0 0 22px;
   }
 }
 
 .radio__mark {
   position: absolute;
-  top: -2px;
+  top: -8px;
   left: 0;
   width: 30px;
   height: 30px;
@@ -167,7 +198,13 @@
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
-    left: 15px;
+    left: 26px;
+    top: -6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 7px;
+    top: -7px;
   }
 }
 
@@ -184,16 +221,28 @@
   }
 }
 
-.program-form:not(:last-child) {
-  margin: 0 0 13px 0;
+.program-form {
+  width: 280px;
+  margin: 0 0 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  .program-form:not(:last-child) {
+    margin: 0 0 15px;
+
+    @media (min-width: @desktop-width) {
+      margin: 0 0 21px;
+    }
+  }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 20px 0;
+    width: 569px;
   }
 }
 
 .program-form__label {
-  margin: 0 13px 0 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -201,15 +250,21 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+  margin: 0 8px 0 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin: 0 13px 0 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 11px 0 0;
   }
 }
 
 .program-form__input {
-  padding: 13px 14px 14px;
+  padding: 9px 0 9px 14px;
   border: 1px solid #e7e7e7;
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -225,20 +280,27 @@
   }
 
   &:focus {
-    border: 2px solid #444444;
+    border: 1px solid #444444;
     outline: 0;
   }
 
   @media (min-width: @tablet-width) {
-    width: 567px;
+    width: 547px;
+    padding: 16px 0 8px 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 24px 11px 20px;
   }
 }
 
 .input-name {
-  width: 228px;
+  width: 211px;
 
   @media (min-width: @tablet-width) {
-    width: 548px;
+    width: 545px;
   }
 
   @media (min-width: @desktop-width) {
@@ -248,7 +310,7 @@
 }
 
 .input-weight {
-  width: 207px;
+  width: 189px;
 
   @media (min-width: @tablet-width) {
     width: 520px;
@@ -261,7 +323,7 @@
 }
 
 .input-age {
-  width: 175px;
+  width: 156px;
 
   @media (min-width: @tablet-width) {
     width: 479px;
@@ -288,11 +350,20 @@
 }
 
 .program-type__radio-item:not(:last-child) {
-  margin: 0 0 13px 0;
+  margin: 0 0 3px 0;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .radio__label {
   text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
 
   @media (min-width: @tablet-width) {
     padding: 0 20px;
@@ -302,33 +373,38 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 1px;
+    margin: 0 0 22px;
+  }
 }
 
 .program-type__contacts {
   border: 0;
   padding: 0;
   width: 330px;
-  margin: 0 auto;
+  margin: 0 auto 12px;
+
 
   @media (min-width: @tablet-width) {
-    padding: 0 71px;
-    width: 630px;
-    margin: 0 auto;
+    width: 708px;
+    margin: 0 auto 46px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto 69px;
-    padding: 0 110px;
+    margin: 0 auto 65px;
+    padding: 0;
   }
 }
 
 .program-type__contacts-title {
   width: 187px;
   position: relative;
-  margin: 0 0 35px 0;
+  margin: 0 0 33px 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -377,6 +453,12 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
+    padding: 0 0 0 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0 0 75px 0;
   }
 }
 
@@ -386,13 +468,16 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 69px;
+    margin: 0;
     align-items: center;
+    width: 708px;
+    padding: 0 0 0 39px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    margin: 0 0 69px 0;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -403,6 +488,13 @@
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
+    margin: 0 0 22px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 647px;
+    margin: 0 2px 0 0;
   }
 }
 
@@ -416,10 +508,12 @@
     width: 50px;
     height: 53px;
     z-index: 1;
-    right: 30px;
+    right: 52px;
+    top: -3px;
 
     @media (min-width: @tablet-width) {
-      right: 10px;
+      right: 80px;
+      top: 1px;
     }
 
     @media (min-width: @desktop-width) {
@@ -441,10 +535,10 @@
     height: 20px;
     z-index: 1;
     top: 15px;
-    right: 42px;
+    right: 64px;
 
     @media (min-width: @tablet-width) {
-      right: 20px;
+      right: 94px;
     }
 
     @media (min-width: @desktop-width) {
@@ -455,15 +549,30 @@
 }
 
 .program-type__contact {
-  margin: 0 10px 0 0;
+  margin: 0 7px 0 0;
   text-transform: uppercase;
   color: #444444;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 18px 0 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 22px 0 0;
+  }
 }
 
 .program-type__contacts-input {
   position: relative;
   border: 1px solid #cdcdcd;
-  padding: 13px 0 15px 16px;
+  padding: 12px 13px 7px 13px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -472,21 +581,31 @@
   line-height: 18px;
   color: #444444;
 
+  @media (min-width: @tablet-width) {
+    padding: 10px 13px 6px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &:hover {
     border: 1px solid #cdcdcd;
   }
 
   &:focus {
-    border: 2px solid #444444;
+    border: 1px solid #444444;
     outline: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 20px 14px 16px;
   }
 }
 
 .input-email {
-  width: 219px;
+  width: 190px;
 
   @media (min-width: @tablet-width) {
-    width: 551px;
+    width: 511px;
   }
 
   @media (min-width: @desktop-width) {
@@ -497,14 +616,14 @@
 
 
 .input-tel {
-  width: 204px;
+  width: 173px;
 
   @media (min-width: @tablet-width) {
-    width: 535px;
+    width: 488px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 472px;
+    width: 429px;
   }
 }
 
@@ -517,13 +636,14 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    padding: 0 69px;
-    width: 630px;
+    padding: 0 39px;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding: 0 110px;
+    padding: 0;
+    margin: 0 0 27px 0;
   }
 }
 
@@ -575,6 +695,7 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin: 0 0 74px;
   }
 }
 
@@ -591,7 +712,7 @@
   color: #444444;
   text-align: center;
   padding: 9px 0;
-  margin: 0 0 23px 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     width: 600px;
@@ -599,6 +720,8 @@
     text-align: start;
     padding: 10px 19px;
     margin: 0 0 65px 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -614,25 +737,31 @@
   width: 280px;
 
   @media (min-width: @tablet-width) {
-    width: 630px;
+    width: 708px;
+    padding: 0 39px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding: 0 110px;
+    padding: 0;
   }
 }
 
 .program-extra-label {
   position: relative;
   display: block;
-  padding-left: 36px;
-  margin: 0 0 20px 0;
+  padding-left: 34px;
+  margin: 0 0 23px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 29px;
+    margin: 0 0 10px;
+  }
 }
 
 .control-mark {
   position: absolute;
-  top: 2px;
+  top: -4px;
   left: 0;
   width: 26px;
   height: 26px;
@@ -673,7 +802,7 @@
 
 .program-extra__title {
   position: relative;
-  margin: 0 0 34px 0;
+  margin: 0 0 41px 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -722,28 +851,31 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
+    margin: 0 0 65px 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 57px 0;
+    margin: 0 0 63px 0;
   }
 }
 
 .program-extra__list {
-  margin: 0 0 34px 0;
+  margin: 0 0 37px 0;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 231px 231px;
-    column-gap: 123px;
+    column-gap: 114px;
     row-gap: 32px;
+    margin: 0 0 47px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    margin: 0 0 66px 0;
+    margin: 0 0 57px;
+    column-gap: 95px;
+    grid-template-columns: 229px 228px 233px 221px 235px;
   }
 }
 
@@ -777,17 +909,18 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     width: 630px;
-    margin: 0 auto;
+    margin: 0 auto 76px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding: 0 110px;
+    padding: 0;
+    margin: 0 auto 82px;
   }
 }
 
 .program-type__button {
-  margin: 0 0 21px 0;
+  margin: 0 0 8px 0;
   background: #68b738;
   border: 0;
   height: 40px;
@@ -812,7 +945,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 61px 0 0;
+    margin: 0 67px 0 0;
     padding: 13px 45px;
     height: 52px;
     min-width: 282px;
@@ -827,9 +960,10 @@
 }
 
 .program-type__button-description {
+  text-align: center;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
 }

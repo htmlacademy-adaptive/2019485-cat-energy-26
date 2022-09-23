@@ -122,7 +122,7 @@
     <section class="live-example">
       <div class="live-example__wrapper">
         <h2 class="live-example__title">
-          Живой Пример
+          Живой пример
         </h2>
         <p class="live-example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
@@ -131,8 +131,8 @@
         <div class="stats__wrapper">
           <ul class="stats__list">
             <li class="stats__item">
-              <p class="stats__item-value">5 кг</p>
-              <p class="stats__item-index">снижение <br> веса</p>
+              <p class="stats__item-value value-weight">5 кг</p>
+              <p class="stats__item-index index-weight">снижение <br> веса</p>
             </li>
             <li class="stats__item">
               <p class="stats__item-value value-days">60 дней</p>
@@ -140,13 +140,19 @@
             </li>
           </ul>
           <div class="cost">
-            <p class="cost__value">Затраты на питание: 15 000 руб.</p>
+            <p class="cost__value">Затраты на питание:</p>
+            <p class="cost__value-price">15 000 руб.</p>
           </div>
         </div>
       </div>
+      <span class="picture-background"></span>
       <div class="example-picture__wrapper">
         <div class="picture-before">
-          <img src="../img/png/cat-slider-before.png" width="200" height="256" alt="Фото кота до">
+          <picture>
+        <source media="(min-width: 1440px)" srcset="../img/png/cat-slider-before-desktop.png 1x, ../img/png/cat-slider-before-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="../img/png/cat-slider-before-tablet.png 1x, ../img/png/cat-slider-before-tablet@2x.png 2x">
+        <img class="image-before" src="../img/png/cat-slider-before.png" width="200" height="256" alt="Фото кота до">
+    </picture>
         </div>
         <div class="range-slider">
           <div class="range-slider__toggle">
@@ -159,7 +165,11 @@
         </div>
         </div>
         <div class="picture-after">
-          <img src="../img/png/cat-slider-after.png" width="200" height="256" alt="Фото кота после">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="../img/png/cat-slider-after-desktop.png 1x, ../img/png/cat-slider-after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="../img/png/cat-slider-after-tablet.png 1x, ../img/png/cat-slider-after-tablet@2x.png 2x">
+            <img class="image-after" src="../img/png/cat-slider-after.png" srcset="../img/png/cat-slider-after@2x.png 2x" width="200" height="256" alt="Фото кота после">
+        </picture>
         </div>
       </div>
     </section>
@@ -167,9 +177,11 @@
       <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
       <div class="business-inquiries__wrapper">
         <p class="business-inquiries__title">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="business-inquiries__description">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+        <div class="business-inquiries__description--wrapper">
+          <p class="business-inquiries__description">ул. Большая</p>
+          <p class="business-inquiries__description--street">Конюшенная, д. 19/8</p>
+          <p class="business-inquiries__description--city">Санкт-Петербург</p>
+        </div>
       </div>
     </section>
     <section class="location-point">
@@ -182,28 +194,28 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
-        <img src="../img/svg/text-logo.svg" alt="Cat Energy">
+        <img class="catenergy-social" src="../img/svg/text-logo.svg" alt="Cat Energy">
       </div>
       <div class="main-footer__social social">
         <span class="visually-hidden">Наши Социальные Сети</span>
         <ul class="social__list">
           <li class="social__item">
             <a href="vk.com/htmlacademy" class="social__link social__link--vkontakte">
-              <svg>
+              <svg class="social-svg">
                 <use href="../img/svg/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social__link social__link--youtube">
-              <svg>
+              <svg class="social-svg">
                 <use href="../img/svg/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="https://t.me/s/htmlacademy" class="social__link social__link--telegram">
-              <svg>
+              <svg class="social-svg">
                 <use href="../img/svg/sprite.svg#icon-telegram"></use>
               </svg>
               </a>

@@ -6,9 +6,15 @@
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
+  padding: 0 20px;
+  margin: 0;
 
-  @media (max-width: @tablet-width) {
-    margin: 0 0 64px 0;
+  @media (min-width: @tablet-width) {
+    margin: 0 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -17,22 +23,31 @@
   flex-direction: column;
   min-height: 65px;
   justify-content: center;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+  }
 }
 
 .header-logo__wrapper {
   display: flex;
   align-items: center;
-  padding: 0 20px;
 }
 
 .main-header__logo--image {
-  text-decoration: none;
+  margin: 0 56px 0 0;
 }
 
 .main-header__logo--text {
   margin: 0 auto;
 }
 
+.header-logo__picture {
+  width: 33px;
+  height: 37px;
+}
 
 .main-header__logo--text img {
   height: 18px;
@@ -66,8 +81,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  right: 0;
+  top: 13px;
+  right: -19px;
   width: 24px;
   height: 2px;
   background-color: #000000;
@@ -139,21 +154,18 @@
 @media (min-width: @tablet-width) {
   .main-header__wrapper {
     flex-direction: row;
-    padding: 24px 20px;
     justify-content: space-between;
+    margin: 26px auto 0 auto;
   }
 
   .main-nav__toggle {
     display: none;
   }
 
-  .header-logo__wrapper {
-    margin: 0 94px 0 0;
-  }
 
   .header-logo__picture {
-    width: 100%;
-    height: 100%;
+    width: 174px;
+    height: 51px;
   }
 
   .main-header__logo--text {
@@ -187,12 +199,13 @@
 
   .site-list__item--active {
     position: relative;
+    box-sizing: border-box;
 
     &::after {
       content: "";
       position: absolute;
       right: 0;
-      bottom: 0;
+      bottom: 13px;
       left: 0;
       height: 2px;
       background: #68b738;
@@ -223,8 +236,8 @@
 
 @media (min-width: @desktop-width) {
   .main-header__wrapper {
-    padding: 53px 110px;
-    margin: 0 0 111px 0;
+    width: 1220px;
+    margin: 53px auto 103px;
   }
 
   .header-logo__wrapper {
@@ -244,6 +257,11 @@
     justify-content: flex-end;
   }
 
+  .site-list a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .site-list__link {
     color: #ffffff;
   }
@@ -255,7 +273,7 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: 0;
+      bottom: 14px;
       left: 0;
       height: 2px;
       background: #ffffff;
@@ -278,7 +296,7 @@
     content: "";
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 14px;
     left: 0;
     height: 2px;
     background-color: #68b738;
