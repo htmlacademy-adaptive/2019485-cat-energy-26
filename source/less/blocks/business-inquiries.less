@@ -1,11 +1,32 @@
+.business-inquiries {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    padding: 0 110px;
+  }
+}
+
 .business-inquiries__wrapper {
   display: flex;
   padding: 26px 20px;
   justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
+    padding: 59px 40px;
+    width: 708px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+    position: absolute;
+    background: #ffffff;
+    margin: 0;
+    top: 99px;
+    padding: 56px 80px;
   }
 }
 
@@ -15,6 +36,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0 24px 0 0;
 
   @media (min-width: @tablet-width) {
     width: 171px;
@@ -24,16 +46,72 @@
   }
 }
 
+.business-inquiries__description--wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .business-inquiries__description {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  color: #444444;
 
   @media (min-width: @tablet-width) {
     width: 160px;
     font-size: 16px;
     line-height: 20px;
-    color: #444444;
+    text-align: end;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+  }
+}
+
+.business-inquiries__description--street {
+  margin: 0;
+  white-space: nowrap;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    margin: 0 0 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+  }
+}
+
+.business-inquiries__description--city {
+  margin: 0;
+  white-space: nowrap;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
   }
 }

@@ -8,9 +8,11 @@
 
 .program-benefits__wrapper {
   padding: 0 20px;
-
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    width: 708px;
     padding: 0 30px;
     margin: 0 auto;
     display: flex;
@@ -18,17 +20,20 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 1220px;
     padding: 0 110px;
     justify-content: center;
   }
 }
+
 
 .program-benefits__item {
   position: relative;
   display: flex;
   align-items: center;
   min-height: 60px;
-  padding: 0 23px 0 100px;
+  padding: 0 0 0 80px;
+  width: 199px;
 
   &:not(:last-child) {
     margin: 0 0 20px 0;
@@ -36,9 +41,13 @@
 
   @media (min-width: @tablet-width) {
     padding: 40px 29px 57px 0;
-    min-width: 230px;
-    min-height: 280px;
+    width: 230px;
+    height: 280px;
     margin: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
   }
 }
 
@@ -50,8 +59,8 @@
     line-height: 280px;
     color: #f2f2f2;
     font-family: "Oswald", sans-serif;
-    right: 145px;
-    top: 10px;
+    right: 5px;
+    top: -36px;
   }
 
   .program-benefits__item--powder::before {
@@ -61,8 +70,8 @@
     line-height: 280px;
     color: #f2f2f2;
     font-family: "Oswald", sans-serif;
-    right: 145px;
-    top: 10px;
+    right: 5px;
+    top: -36px;
   }
 
   .program-benefits__item--food::before {
@@ -72,8 +81,8 @@
     line-height: 280px;
     color: #f2f2f2;
     font-family: "Oswald", sans-serif;
-    right: 145px;
-    top: 10px;
+    right: 5px;
+    top: -36px;
   }
 
   .program-benefits__item--time::before {
@@ -83,8 +92,8 @@
     line-height: 280px;
     color: #f2f2f2;
     font-family: "Oswald", sans-serif;
-    right: 145px;
-    top: 10px;
+    right: 5px;
+    top: -36px;
   }
 }
 
@@ -96,8 +105,8 @@
     line-height: 280px;
     color: #f2f2f2;
     font-family: "Oswald", sans-serif;
-    right: 55px;
-    top: 10px;
+    right: 5px;
+    top: -30px;
   }
 
   .program-benefits__item--powder::before {
@@ -107,8 +116,8 @@
     line-height: 280px;
     color: #f2f2f2;
     font-family: "Oswald", sans-serif;
-    right: 45px;
-    top: 10px;
+    right: 5px;
+    top: -30px;
   }
 
   .program-benefits__item--food::before {
@@ -118,8 +127,8 @@
     line-height: 280px;
     color: #f2f2f2;
     font-family: "Oswald", sans-serif;
-    right: 30px;
-    top: 10px;
+    right: 5px;
+    top: -30px;
   }
 
   .program-benefits__item--time::before {
@@ -129,8 +138,8 @@
     line-height: 280px;
     color: #f2f2f2;
     font-family: "Oswald", sans-serif;
-    right: 35px;
-    top: 10px;
+    right: 5px;
+    top: -30px;
   }
 }
 
@@ -141,6 +150,8 @@
 
   @media (min-width: @tablet-width) {
     width: 230px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -151,6 +162,12 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0 0 40px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 80px;
+  }
 }
 
 .program-benefits__description--organic::before {
@@ -159,13 +176,13 @@
   background: url("../img/svg/benefits-organic-icon-tablet.svg") no-repeat center;
   width: 60px;
   height: 60px;
-  left: -100px;
+  left: -78px;
   top: -3px;
 
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
-    top: -100px;
+    top: -111px;
     left: 0;
   }
 }
@@ -176,13 +193,13 @@
   background: url("../img/svg/benefits-powder-icon-tablet.svg") no-repeat center;
   width: 60px;
   height: 60px;
-  left: -100px;
+  left: -78px;
   top: -3px;
 
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
-    top: -100px;
+    top: -111px;
     left: 0;
   }
 }
@@ -193,13 +210,13 @@
   background: url("../img/svg/benefits-food-icon-tablet.svg") no-repeat center;
   width: 60px;
   height: 60px;
-  left: -100px;
+  left: -78px;
   top: -3px;
 
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
-    top: -100px;
+    top: -111px;
     left: 0;
   }
 }
@@ -210,31 +227,32 @@
   background: url("../img/svg/benefits-time-icon-tablet.svg") no-repeat center;
   width: 60px;
   height: 60px;
-  left: -100px;
+  left: -78px;
   top: -3px;
 
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
-    top: -100px;
+    top: -111px;
     left: 0;
   }
 }
 
 .program-benefits__list {
-  margin: 0 0 49px 0;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 153px;
-    row-gap: 37px;
+    column-gap: 66px;
+    row-gap: 17px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: center;
+    column-gap: 94px;
   }
 }

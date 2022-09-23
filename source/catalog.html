@@ -14,8 +14,8 @@
 <!-- Header Start -->
 
 <body class="page__body">
-  <header class="main-header">
-    <div class="main-header__wrapper">
+  <header class="catalog-header">
+    <div class="catalog-header__wrapper">
       <div class="header-logo__wrapper">
     <a href="#" class="main-header__logo--image">
       <picture>
@@ -50,7 +50,7 @@
   </header>
   <!-- Header End -->
 <!-- Main start -->
-<main>
+<main class="main-container">
 <section class="catalog">
   <div class="catalog__title-wrapper">
   <h2 class="catalog__title">Каталог продукции</h2>
@@ -59,6 +59,7 @@
     <li class="catalog__item">
       <div class="catalog__item-picture">
         <picture>
+          <source media="(min-width: 1440px)" srcset="./img/catalog/png/cat-pro-chicken-500-desktop.png">
           <source media="(min-width: 768px)" srcset="./img/catalog/png/cat-pro-chicken-500-tablet.png">
         <img src="./img/catalog/png/cat-pro-chicken-500.png" alt="Банка Cat Pro с курицей" class="catalog__item-image">
       </picture>
@@ -79,7 +80,7 @@
       </div>
         <div class="catalog__item-description--price-wrapper">
         <p class="catalog__item-description--price">Цена </p>
-        <p class="catalog__item-description--price-value">700Р</p>
+        <p class="catalog__item-description--price-value">700Р.</p>
         </div>
       </div>
       <div class="button__wrapper">
@@ -87,18 +88,21 @@
       </div>
     </li>
     <li class="catalog__item">
-      <div class="catalog__item-picture">
+      <div class="catalog__item-picture picture-1000">
         <picture>
+          <source media="(min-width: 1440px)" srcset="./img/catalog/png/cat-pro-chicken-1000-desktop.png">
           <source media="(min-width: 768px)" srcset="./img/catalog/png/cat-pro-chicken-1000-tablet.png">
         <img src="./img/catalog/png/cat-pro-chicken-1000.png" alt="Банка Cat Pro с курицей" class="catalog__item-image">
         </picture>
       </div>
       <div class="catalog__item-wrapper">
+        <div class="catalog__item-title-wrapper">
       <h3 class="catalog__item-title">Cat Energy
         PRO
         1000 г</h3>
+      </div>
         <div class="catalog__item-description--weight-wrapper">
-        <p class="catalog__item-description--weight">Масса</p>
+        <p class="catalog__item-description--weight weight-1000">Масса</p>
         <p class="catalog__item-description--weight-value">1000 г</p>
       </div>
       <div class="catalog__item-description--flavour-wrapper">
@@ -107,7 +111,7 @@
       </div>
         <div class="catalog__item-description--price-wrapper">
         <p class="catalog__item-description--price">Цена </p>
-        <p class="catalog__item-description--price-value">1000Р</p>
+        <p class="catalog__item-description--price-value">1000Р.</p>
         </div>
       </div>
       <div class="button__wrapper">
@@ -117,25 +121,28 @@
     <li class="catalog__item">
       <div class="catalog__item-picture">
         <picture>
+          <source media="(min-width: 1440px)" srcset="./img/catalog/png/cat-pro-fish-500-desktop.png">
           <source media="(min-width: 768px)" srcset="./img/catalog/png/cat-pro-fish-500-tablet.png">
         <img src="./img/catalog/png/cat-pro-fish-500.png" alt="Банка Cat Pro с рыбой" class="catalog__item-image">
 </picture>
       </div>
       <div class="catalog__item-wrapper">
+        <div class="catalog__item-title-wrapper">
       <h3 class="catalog__item-title">Cat Energy
         PRO
         500 г</h3>
+      </div>
         <div class="catalog__item-description--weight-wrapper">
         <p class="catalog__item-description--weight">Масса</p>
         <p class="catalog__item-description--weight-value">500 г</p>
       </div>
       <div class="catalog__item-description--flavour-wrapper">
-        <p class="catalog__item-description--flavour">Вкус</p>
+        <p class="catalog__item-description--flavour flavour-fish">Вкус</p>
         <p class="catalog__item-description--flavour-value">Рыба</p>
       </div>
         <div class="catalog__item-description--price-wrapper">
         <p class="catalog__item-description--price">Цена </p>
-        <p class="catalog__item-description--price-value">700Р</p>
+        <p class="catalog__item-description--price-value">700Р.</p>
         </div>
       </div>
       <div class="button__wrapper">
@@ -143,27 +150,30 @@
       </div>
     </li>
     <li class="catalog__item">
-      <div class="catalog__item-picture">
+      <div class="catalog__item-picture picture-1000">
         <picture>
+          <source media="(min-width: 1440px)" srcset="./img/catalog/png/cat-pro-fish-1000-desktop.png">
           <source media="(min-width: 768px)" srcset="./img/catalog/png/cat-pro-fish-1000-tablet.png">
         <img src="./img/catalog/png/cat-pro-fish-1000.png" alt="Банка Cat Pro с рыбой" class="catalog__item-image">
         </picture>
       </div>
       <div class="catalog__item-wrapper">
+        <div class="catalog__item-title-wrapper">
       <h3 class="catalog__item-title">Cat Energy
         PRO
         1000 г</h3>
+      </div>
         <div class="catalog__item-description--weight-wrapper">
-        <p class="catalog__item-description--weight">Масса</p>
+        <p class="catalog__item-description--weight weight-1000">Масса</p>
         <p class="catalog__item-description--weight-value">1000 г</p>
       </div>
       <div class="catalog__item-description--flavour-wrapper">
-        <p class="catalog__item-description--flavour">Вкус</p>
+        <p class="catalog__item-description--flavour flavour-fish">Вкус</p>
         <p class="catalog__item-description--flavour-value">Рыба</p>
       </div>
         <div class="catalog__item-description--price-wrapper">
         <p class="catalog__item-description--price">Цена </p>
-        <p class="catalog__item-description--price-value">1000Р</p>
+        <p class="catalog__item-description--price-value">1000Р.</p>
         </div>
       </div>
       <div class="button__wrapper">
@@ -173,14 +183,17 @@
     <li class="catalog__item">
       <div class="catalog__item-picture">
         <picture>
+          <source media="(min-width: 1440px)" srcset="./img/catalog/png/cat-slim-buckwheat-500-desktop.png">
           <source media="(min-width: 768px)" srcset="./img/catalog/png/cat-slim-buckwheat-500-tablet.png">
         <img src="./img/catalog/png/cat-slim-buckwheat-500.png" alt="Банка Cat Pro с гречкой" class="catalog__item-image">
         </picture>
       </div>
       <div class="catalog__item-wrapper">
+        <div class="catalog__item-title-wrapper">
       <h3 class="catalog__item-title">Cat Energy
         SLIM
         500 г</h3>
+      </div>
         <div class="catalog__item-description--weight-wrapper">
         <p class="catalog__item-description--weight">Масса</p>
         <p class="catalog__item-description--weight-value">500 г</p>
@@ -191,7 +204,7 @@
       </div>
         <div class="catalog__item-description--price-wrapper">
         <p class="catalog__item-description--price">Цена </p>
-        <p class="catalog__item-description--price-value">400Р</p>
+        <p class="catalog__item-description--price-value">400Р.</p>
         </div>
       </div>
       <div class="button__wrapper">
@@ -199,18 +212,21 @@
       </div>
     </li>
     <li class="catalog__item">
-      <div class="catalog__item-picture">
+      <div class="catalog__item-picture picture-1000">
         <picture>
+          <source media="(min-width: 1440px)" srcset="./img/catalog/png/cat-slim-buckwheat-1000-desktop.png">
           <source media="(min-width: 768px)" srcset="./img/catalog/png/cat-slim-buckwheat-1000-tablet.png">
         <img src="./img/catalog/png/cat-slim-buckwheat-1000.png" alt="Банка Cat Pro с гречкой" class="catalog__item-image">
         </picture>
       </div>
       <div class="catalog__item-wrapper">
+        <div class="catalog__item-title-wrapper">
       <h3 class="catalog__item-title">Cat Energy
         SLIM
         1000 г</h3>
+      </div>
         <div class="catalog__item-description--weight-wrapper">
-        <p class="catalog__item-description--weight">Масса</p>
+        <p class="catalog__item-description--weight weight-1000">Масса</p>
         <p class="catalog__item-description--weight-value">1000 г</p>
       </div>
       <div class="catalog__item-description--flavour-wrapper">
@@ -219,7 +235,7 @@
       </div>
         <div class="catalog__item-description--price-wrapper">
         <p class="catalog__item-description--price">Цена </p>
-        <p class="catalog__item-description--price-value">700Р</p>
+        <p class="catalog__item-description--price-value">700Р.</p>
         </div>
       </div>
       <div class="button__wrapper">
@@ -229,25 +245,28 @@
     <li class="catalog__item">
       <div class="catalog__item-picture">
         <picture>
+          <source media="(min-width: 1440px)" srcset="./img/catalog/png/cat-slim-rice-500-desktop.png">
           <source media="(min-width: 768px)" srcset="./img/catalog/png/cat-slim-rice-500-tablet.png">
         <img src="./img/catalog/png/cat-slim-rice-500.png" alt="Банка Cat Pro с рисом" class="catalog__item-image">
         </picture>
       </div>
       <div class="catalog__item-wrapper">
+        <div class="catalog__item-title-wrapper">
       <h3 class="catalog__item-title">Cat Energy
         SLIM
         500 г</h3>
+      </div>
         <div class="catalog__item-description--weight-wrapper">
         <p class="catalog__item-description--weight">Масса</p>
         <p class="catalog__item-description--weight-value">500 г</p>
       </div>
       <div class="catalog__item-description--flavour-wrapper">
-        <p class="catalog__item-description--flavour">Вкус</p>
+        <p class="catalog__item-description--flavour description-rice">Вкус</p>
         <p class="catalog__item-description--flavour-value">Рис</p>
       </div>
         <div class="catalog__item-description--price-wrapper">
         <p class="catalog__item-description--price">Цена </p>
-        <p class="catalog__item-description--price-value">500Р</p>
+        <p class="catalog__item-description--price-value">500Р.</p>
         </div>
       </div>
       <div class="button__wrapper">
@@ -255,12 +274,13 @@
       </div>
     </li>
     <li class="more__item">
-      <div class="more__item-container">
+
+    <div class="more__item-container">
       <h3 class="more__item-title">Показать еще 100500 товаров</h3>
       <p class="more__item-description">На самом деле вкусов гораздо больше!</p>
+  </div>
       <div class="more__item-button-wrapper">
         <button class="more__item-button">ПОКАЗАТЬ ВСЕ</button>
-      </div>
     </div>
     </li>
   </ul>
@@ -329,9 +349,11 @@
   <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
   <div class="business-inquiries__wrapper">
     <p class="business-inquiries__title">Приглашаем к сотрудничеству дилеров!</p>
-    <p class="business-inquiries__description">ул. Большая
-      Конюшенная, д. 19/8
-      Санкт-Петербург</p>
+    <div class="business-inquiries__description--wrapper">
+      <p class="business-inquiries__description">ул. Большая</p>
+      <p class="business-inquiries__description--street">Конюшенная, д. 19/8</p>
+      <p class="business-inquiries__description--city">Санкт-Петербург</p>
+    </div>
   </div>
 </section>
 <section class="location-point">
@@ -344,28 +366,28 @@
 <footer class="main-footer">
   <div class="main-footer__wrapper">
     <div class="main-footer__logo">
-      <img src="../img/svg/text-logo.svg" alt="Cat Energy">
+      <img class="catenergy-social" src="../img/svg/text-logo.svg" alt="Cat Energy">
     </div>
     <div class="main-footer__social social">
       <span class="visually-hidden">Наши Социальные Сети</span>
       <ul class="social__list">
         <li class="social__item">
           <a href="vk.com/htmlacademy" class="social__link social__link--vkontakte">
-            <svg>
+            <svg class="social-svg">
               <use href="../img/svg/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social__link social__link--youtube">
-            <svg>
+            <svg class="social-svg">
               <use href="../img/svg/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a href="https://t.me/s/htmlacademy" class="social__link social__link--telegram">
-            <svg>
+            <svg class="social-svg">
               <use href="../img/svg/sprite.svg#icon-telegram"></use>
             </svg>
             </a>
