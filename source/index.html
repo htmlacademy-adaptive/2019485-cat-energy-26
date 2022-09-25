@@ -10,31 +10,33 @@
   <link rel="icon" sizes="32x32" href="favicon.ico">
   <link rel="icon" href="../img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="../fonts/oswaldmedium.woff2" as="font">
 </head>
 <!-- Header Start -->
 
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <div class="header-logo__wrapper">
-    <a href="#" class="main-header__logo--image">
+      <div class="main-header__logo-wrapper">
+    <a href="#" class="main-header__logo-image">
       <picture>
         <source media="(min-width: 1440px)" srcset="../img/svg/tablet-logo.svg">
         <source media="(min-width: 768px)" srcset="../img/svg/tablet-logo.svg">
-        <img class="header-logo__picture" src="../img/svg/mobile-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
+        <img class="header-logo-picture" src="../img/svg/mobile-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
     </picture>
     </a>
-    <a href="" class="main-header__logo--text">
+    <a href="" class="main-header__logo-text">
       <img src="../img/svg/text-logo.svg" width="33" height="37" alt="Cat Energy">
     </a>
   </div>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+  <!--для закрытия меню "main-nav--opened" заменить на "main-nav--closed"-->
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden"></span> <!--Открыть меню-->
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__item-active">
             <a href="index.html" class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
@@ -52,7 +54,7 @@
   <!-- Main Start -->
   <main class="main-container">
     <section class="promo">
-      <div class="promo-hero__wrapper">
+      <div class="promo-hero-wrapper">
         <div class="promo__wrapper">
         <h1 class="promo__title">Функциональное <br>
           питание для котов</h1>
@@ -67,24 +69,24 @@
       </picture>
       </div>
       </div>
-      <div class="promo-program-link__wrapper">
+      <div class="promo-program-link-wrapper">
       <a href="form.html" class="promo__program-link">Подобрать программу</a>
     </div>
     </section>
     <section class="program-type">
       <div class="program-type__wrapper">
         <h2 class="visually-hidden">Виды программ</h2>
-        <div class="slim__wrapper">
-          <h3 class="slim__title">Похудение</h3>
-          <p class="slim__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
+        <div class="slim-wrapper">
+          <h3 class="slim-title">Похудение</h3>
+          <p class="slim-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
             на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="#" class="slim__catalog-link">Каталог SLIM</a>
+          <a href="#" class="slim-catalog-link">Каталог SLIM</a>
         </div>
-        <div class="pro__wrapper">
-          <h3 class="pro__title">Набор массы</h3>
-          <p class="pro__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+        <div class="pro-wrapper">
+          <h3 class="pro-title">Набор массы</h3>
+          <p class="pro-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы!</p>
-          <a href="#" class="pro__catalog-link">Каталог PRO</a>
+          <a href="#" class="pro-catalog-link">Каталог PRO</a>
         </div>
       </div>
     </section>
@@ -128,15 +130,15 @@
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
           изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="stats__wrapper">
-          <ul class="stats__list">
-            <li class="stats__item">
-              <p class="stats__item-value value-weight">5 кг</p>
-              <p class="stats__item-index index-weight">снижение <br> веса</p>
+        <div class="stats-wrapper">
+          <ul class="stats-list">
+            <li class="stats-item">
+              <p class="stats-item-value value-weight">5 кг</p>
+              <p class="stats-item-index index-weight">снижение <br> веса</p>
             </li>
-            <li class="stats__item">
-              <p class="stats__item-value value-days">60 дней</p>
-              <p class="stats__item-index index-days">затрачено времени</p>
+            <li class="stats-item">
+              <p class="stats-item-value value-days">60 дней</p>
+              <p class="stats-item-index index-days">затрачено времени</p>
             </li>
           </ul>
           <div class="cost">
@@ -146,18 +148,18 @@
         </div>
       </div>
       <span class="picture-background"></span>
-      <div class="example-picture__wrapper">
+      <div class="example-picture-wrapper">
         <div class="picture-before">
           <picture>
         <source media="(min-width: 1440px)" srcset="../img/png/cat-slider-before-desktop.png 1x, ../img/png/cat-slider-before-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="../img/png/cat-slider-before-tablet.png 1x, ../img/png/cat-slider-before-tablet@2x.png 2x">
-        <img class="image-before" src="../img/png/cat-slider-before.png" width="200" height="256" alt="Фото кота до">
+        <img class="image-before" src="../img/png/cat-slider-before.png" srcset="../img/png/cat-slider-before@2x.png 2x" width="200" height="256" alt="Фото кота до">
     </picture>
         </div>
         <div class="range-slider">
           <div class="range-slider__toggle">
             <button class="range-slider__button" type="button">
-              <svg>
+              <svg width="40" height="40">
                 <use href="../img/svg/sprite.svg#range-slider-button"></use>
               </svg>
             </button>
@@ -177,10 +179,10 @@
       <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
       <div class="business-inquiries__wrapper">
         <p class="business-inquiries__title">Приглашаем к сотрудничеству дилеров!</p>
-        <div class="business-inquiries__description--wrapper">
+        <div class="business-inquiries__description-wrapper">
           <p class="business-inquiries__description">ул. Большая</p>
-          <p class="business-inquiries__description--street">Конюшенная, д. 19/8</p>
-          <p class="business-inquiries__description--city">Санкт-Петербург</p>
+          <p class="business-inquiries__description-street">Конюшенная, д. 19/8</p>
+          <p class="business-inquiries__description-city">Санкт-Петербург</p>
         </div>
       </div>
     </section>
@@ -194,28 +196,31 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
-        <img class="catenergy-social" src="../img/svg/text-logo.svg" alt="Cat Energy">
+        <img class="catenergy-social" src="../img/svg/text-logo.svg" width="128" height="24" alt="Cat Energy">
       </div>
       <div class="main-footer__social social">
         <span class="visually-hidden">Наши Социальные Сети</span>
         <ul class="social__list">
           <li class="social__item">
+            <span class="visually-hidden">Мы Вконтакте</span>
             <a href="vk.com/htmlacademy" class="social__link social__link--vkontakte">
-              <svg class="social-svg">
+              <svg class="social-svg" width="28" height="22">
                 <use href="../img/svg/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
+            <span class="visually-hidden">Мы на ютуб</span>
             <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social__link social__link--youtube">
-              <svg class="social-svg">
+              <svg class="social-svg" width="28" height="22" >
                 <use href="../img/svg/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
+            <span class="visually-hidden">Мы в телеграм</span>
             <a href="https://t.me/s/htmlacademy" class="social__link social__link--telegram">
-              <svg class="social-svg">
+              <svg class="social-svg" width="28" height="22">
                 <use href="../img/svg/sprite.svg#icon-telegram"></use>
               </svg>
               </a>
@@ -224,7 +229,7 @@
       </div>
       <div class="main-footer__copyright copyright">
         <a href="https://htmlacademy.ru" class="copyright__htmlacademy">HTML Academy</a>
-        <img src="../img/svg/html-academy-logo.svg" alt="Логотип HTMLAcademy">
+        <img src="../img/svg/html-academy-logo.svg" width="163" height="34" alt="Логотип HTMLAcademy">
       </div>
     </div>
   </footer>
