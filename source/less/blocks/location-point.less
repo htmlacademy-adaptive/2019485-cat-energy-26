@@ -1,20 +1,33 @@
-.location-point iframe {
+.iframe-location {
   border: none;
   display: block;
   width: 100%;
+  position: absolute;
+  bottom: 4px;
 }
 
 .location-point {
-  margin: 0 0 39px 0;
+  position: relative;
+  margin: 0 auto 39px;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
 
-.location-point-catalog iframe {
-  border: none;
-  display: block;
-  width: 100%;
-  height: 400px;
-}
+.location-point-image {
+  width: 320px;
 
-.location-poin-catalog {
-  margin: 0 0 3px;
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }

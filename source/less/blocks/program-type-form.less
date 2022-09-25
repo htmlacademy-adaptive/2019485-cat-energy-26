@@ -173,6 +173,11 @@
     opacity: 0.3;
     border: 1px solid #bababa;
     background: url("../img/form/svg/radio-button-disabled.svg") no-repeat center;
+
+    &:focus-visible {
+      background: #5eaa2f;
+      outline: 0;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -199,6 +204,11 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.radio-field:focus-within+.radio-mark {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
 }
 
 .program-form {
@@ -546,6 +556,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 22px 0 0;
+    white-space: nowrap;
   }
 }
 
@@ -779,6 +790,11 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.program-extra-checkbox:focus-within+.control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
 }
 
 .program-extra-title {
