@@ -1,6 +1,6 @@
 .live-example {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -45,7 +45,7 @@
   line-height: 40px;
   font-weight: 400;
   margin: 0 0 41px 0;
-  padding: 75px 0 0 0;
+  padding: 24px 0 0;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -80,7 +80,7 @@
   }
 }
 
-.stats__list {
+.stats-list {
   padding: 0;
   margin: 0 0 34px 0;
   list-style-type: none;
@@ -94,7 +94,7 @@
   }
 }
 
-.stats__item {
+.stats-item {
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   position: relative;
@@ -109,11 +109,11 @@
   }
 }
 
-.stats__item:not(:last-child) {
-  margin: 0 39px 0 0;
+.stats-item:not(:last-child) {
+  margin: 0 28px 0 0;
 }
 
-.stats__wrapper {
+.stats-wrapper {
 
   width: 280px;
   margin: 0 auto 22px;
@@ -131,7 +131,7 @@
 }
 
 
-.stats__item-value {
+.stats-item-value {
   margin: 0 0 7px 0;
   font-size: 24px;
   line-height: 24px;
@@ -161,7 +161,7 @@
   width: 39px;
 }
 
-.stats__item-index {
+.stats-item-index {
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 12px;
@@ -218,7 +218,7 @@
 }
 
 .cost__value-price {
-  font-family: 'Oswald';
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -257,7 +257,7 @@
   }
 }
 
-.example-picture__wrapper {
+.example-picture-wrapper {
   position: relative;
   display: flex;
   justify-content: center;
@@ -302,7 +302,7 @@
 .range-slider__button {
   position: absolute;
   top: 40%;
-  right: 17px;
+  right: -23px;
   border: 0;
   background: transparent;
   fill: #666666;
@@ -314,10 +314,14 @@
   @media (min-width: @tablet-width) {
     top: 47%;
   }
+
+  @media (min-width: @tablet-width) {
+    right: -23px;
+  }
 }
 
 
-.range-slider__button:hover+.range-slider__track {
+.range-slider__button:hover + .range-slider__track {
   background-color: #68b738;
 }
 

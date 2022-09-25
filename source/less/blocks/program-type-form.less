@@ -15,27 +15,7 @@
   }
 }
 
-.form-header__wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 65px;
-  justify-content: center;
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    width: 709px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  @media (min-width: 1440px) {
-    width: 1220px;
-    margin: 53px auto 8px;
-  }
-}
-
-.program-type__container {
+.program-type-container {
   margin: 0 auto;
   min-width: 330px;
 
@@ -57,7 +37,7 @@
   }
 }
 
-.program-title__wrapper {
+.program-title-wrapper {
   width: 310px;
   margin: 0 0 39px 0;
 
@@ -76,9 +56,9 @@
   }
 }
 
-.program-type__title {
+.program-type-title {
   margin: 0 0 37px 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -91,9 +71,9 @@
   }
 }
 
-.program-type__description {
+.program-type-description {
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -108,7 +88,7 @@
   }
 }
 
-.program-type__info {
+.program-type-info {
   display: flex;
   flex-direction: column;
   border: 0;
@@ -129,7 +109,7 @@
   }
 }
 
-.program-type__radio {
+.program-type-radio {
   border: 0;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
@@ -138,9 +118,9 @@
   width: 330px;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: 637px;
     border: 1px solid #e7e7e7;
-    margin: 0 auto 49px;
+    margin: 0 0 49px;
   }
 
   @media (min-width: @desktop-width) {
@@ -154,11 +134,11 @@
   }
 }
 
-.radio__field {
+.radio-field {
   appearance: none;
 }
 
-.program-type__radio-label {
+.program-type-radio-label {
   position: relative;
   display: block;
   padding-left: 36px;
@@ -173,7 +153,7 @@
   }
 }
 
-.radio__mark {
+.radio-mark {
   position: absolute;
   top: -8px;
   left: 0;
@@ -193,6 +173,11 @@
     opacity: 0.3;
     border: 1px solid #bababa;
     background: url("../img/form/svg/radio-button-disabled.svg") no-repeat center;
+
+    &:focus-visible {
+      background: #5eaa2f;
+      outline: 0;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -208,7 +193,7 @@
   }
 }
 
-.radio__field[type="radio"]:checked+.radio__mark::before {
+.radio-field[type="radio"]:checked + .radio-mark::before {
   position: absolute;
   content: "";
   width: 30px;
@@ -219,6 +204,11 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.radio-field:focus-within + .radio-mark {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
 }
 
 .program-form {
@@ -243,7 +233,7 @@
 }
 
 .program-form__label {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -266,7 +256,7 @@
 .program-form__input {
   padding: 9px 0 9px 14px;
   border: 1px solid #e7e7e7;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -335,21 +325,25 @@
   }
 }
 
-.program-type__radio-list {
+.program-type-radio-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    width: 346px;
+  }
 }
 
-.program-type__radio-item {
+.program-type-radio-item {
   @media (min-width: @tablet-width) {
     margin: 0 0 13px 0;
   }
 }
 
-.program-type__radio-item:not(:last-child) {
+.program-type-radio-item:not(:last-child) {
   margin: 0 0 3px 0;
 
   @media (min-width: @desktop-width) {
@@ -357,9 +351,9 @@
   }
 }
 
-.radio__label {
+.radio-label {
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -367,7 +361,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -380,7 +374,7 @@
   }
 }
 
-.program-type__contacts {
+.program-type-contacts {
   border: 0;
   padding: 0;
   width: 330px;
@@ -401,11 +395,11 @@
   }
 }
 
-.program-type__contacts-title {
+.program-type-contacts-title {
   width: 187px;
   position: relative;
   margin: 0 0 33px 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -463,7 +457,7 @@
 }
 
 
-.program-contacts__container {
+.program-contacts-container {
   display: flex;
   flex-direction: column;
 
@@ -481,7 +475,7 @@
   }
 }
 
-.program-contacts__wrapper {
+.program-contacts-wrapper {
   position: relative;
   margin: 0 0 14px 0;
 
@@ -548,11 +542,11 @@
   }
 }
 
-.program-type__contact {
+.program-type-contact {
   margin: 0 7px 0 0;
   text-transform: uppercase;
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -566,15 +560,16 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 22px 0 0;
+    white-space: nowrap;
   }
 }
 
-.program-type__contacts-input {
+.program-type-contacts-input {
   position: relative;
   border: 1px solid #cdcdcd;
   padding: 12px 13px 7px 13px;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -627,7 +622,7 @@
   }
 }
 
-.program-type__comment {
+.program-type-comment {
   padding: 0;
   border: 0;
   display: flex;
@@ -649,7 +644,7 @@
 
 .comment-title {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -703,7 +698,7 @@
   align-self: center;
   width: 280px;
   height: 150px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -713,6 +708,7 @@
   text-align: center;
   padding: 9px 0;
   margin: 0;
+  resize: none;
 
   @media (min-width: @tablet-width) {
     width: 600px;
@@ -730,7 +726,7 @@
   }
 }
 
-.program-type__extra {
+.program-type-extra {
   margin: 0 auto;
   padding: 0;
   border: 0;
@@ -787,7 +783,7 @@
   }
 }
 
-.program-extra__checkbox[type="checkbox"]:checked+.control-mark::before {
+.program-extra-checkbox[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   content: "";
   width: 26px;
@@ -800,10 +796,15 @@
   }
 }
 
-.program-extra__title {
+.program-extra-checkbox:focus-within + .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
+}
+
+.program-extra-title {
   position: relative;
   margin: 0 0 41px 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -846,7 +847,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -859,7 +860,7 @@
   }
 }
 
-.program-extra__list {
+.program-extra-list {
   margin: 0 0 37px 0;
   padding: 0;
   list-style-type: none;
@@ -879,9 +880,9 @@
   }
 }
 
-.extra-checkbox__label {
+.extra-checkbox-label {
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -890,7 +891,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 0 0 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -898,11 +899,11 @@
   }
 }
 
-.program-extra__checkbox {
+.program-extra-checkbox {
   appearance: none;
 }
 
-.program-type__button-wrapper {
+.program-type-button-wrapper {
   display: flex;
   flex-direction: column;
 
@@ -919,14 +920,14 @@
   }
 }
 
-.program-type__button {
+.program-type-button {
   margin: 0 0 8px 0;
   background: #68b738;
   border: 0;
   height: 40px;
   padding: 7px 44px;
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -959,7 +960,7 @@
   }
 }
 
-.program-type__button-description {
+.program-type-button-description {
   text-align: center;
   font-family: "Arial", sans-serif;
   font-style: normal;

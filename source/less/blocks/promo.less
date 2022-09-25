@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -16,7 +16,7 @@
   }
 }
 
-.promo-hero__wrapper {
+.promo-hero-wrapper {
   position: relative;
   display: flex;
   justify-content: center;
@@ -53,7 +53,7 @@
 
 
     &::before {
-      display: contents;
+      display: block;
       position: absolute;
       content: "";
       width: 720px;
@@ -92,7 +92,7 @@
   line-height: 36px;
   color: #ffffff;
   text-align: center;
-  width: 250px;
+  min-width: 250px;
   margin: 0 0 25px 0;
 
 
@@ -102,7 +102,7 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
-    width: 100%;
+    min-width: 414px;
     padding: 0 0 0 87px;
   }
 
@@ -112,7 +112,6 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
-    width: 100%;
     padding: 0 0 0 80px;
   }
 }
@@ -133,6 +132,7 @@
     font-size: 20px;
     line-height: 20px;
     padding: 0 0 0 87px;
+    max-width: 283px;
   }
 
   @media (min-width: @desktop-width) {
@@ -153,7 +153,7 @@
   }
 }
 
-.promo-program-link__wrapper {
+.promo-program-link-wrapper {
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 234px;
