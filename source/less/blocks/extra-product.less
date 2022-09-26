@@ -40,11 +40,28 @@
   &::before {
     position: absolute;
     content: "";
-    width: 53px;
+    width: 767px;
     height: 2px;
     background-color: #68b738;
-    right: -10px;
+    right: -734px;
     top: 15px;
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      width: 1439px;
+      height: 2px;
+      background-color: #68b738;
+      display: block;
+      left: -1438px;
+      top: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -1479px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -54,18 +71,8 @@
     line-height: 36px;
 
     &::before {
-      width: 328px;
-      right: -33px;
-      top: 23px;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 30px;
-      height: 2px;
-      background-color: #68b738;
-      left: -28px;
+      width: 1439px;
+      right: -1142px;
       top: 23px;
     }
   }
@@ -76,19 +83,13 @@
     margin: 0 auto 100px;
 
     &::before {
-      width: 957px;
-      right: -112px;
-      top: 25px;
+      width: 3300px;
+      right: -2453px;
+      top: 22px;
     }
 
     &::after {
-      position: absolute;
-      content: "";
-      width: 70px;
-      height: 2px;
-      background-color: #68b738;
-      left: -109px;
-      top: 25px;
+      left: -1479px;
     }
   }
 }
@@ -192,25 +193,25 @@
   }
 }
 
-.title-water {
+.extra-product-title-water {
   @media (min-width: @desktop-width) {
     margin: 0 195px 0 0;
   }
 }
 
-.title-milk {
+.extra-product-title-milk {
   @media (min-width: @desktop-width) {
     margin: 0 256px 0 0;
   }
 }
 
-.title-vitamins {
+.extra-product-title-vitamins {
   @media (min-width: @desktop-width) {
     margin: 0 234px 0 0;
   }
 }
 
-.description-wrapper {
+.extra-product-description-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -235,19 +236,19 @@
   }
 }
 
-.description-water {
+.extra-product-description-water {
   @media (min-width: @desktop-width) {
     margin: 0 181px 0 0;
   }
 }
 
-.description-milk {
+.extra-product-description-milk {
   @media (min-width: @desktop-width) {
     margin: 0 196px 0 0;
   }
 }
 
-.description-vitamins {
+.extra-product-description-vitamins {
   @media (min-width: @desktop-width) {
     margin: 0 123px 0 0;
   }
@@ -323,7 +324,7 @@
   }
 }
 
-.gift {
+.extra-product-gift {
   position: relative;
   width: 286px;
   height: 286px;
@@ -367,7 +368,7 @@
   }
 }
 
-.gift__description {
+.extra-product-gift__description {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;

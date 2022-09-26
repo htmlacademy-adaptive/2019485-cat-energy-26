@@ -1,31 +1,5 @@
-.catalog-header {
-  @media (min-width: @desktop-width) {
-    margin: 0 0 57px;
-  }
-}
-
-.catalog-header__wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 65px;
-  justify-content: center;
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    width: 709px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  @media (min-width: 1440px) {
-    width: 1220px;
-    margin: 53px auto 8px;
-  }
-}
-
 .catalog {
-  margin: 0 0 23px 0;
+  margin: 0 0 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0 0 62px;
@@ -91,7 +65,7 @@
 .catalog__item {
   display: flex;
   flex-wrap: wrap;
-  min-width: 282px;
+  max-width: 282px;
   justify-content: space-between;
   border-top: 1px solid #d9d9d9;
   padding: 0;
@@ -161,7 +135,7 @@
   }
 }
 
-.picture-1000 {
+.catalog-picture-1000 {
   padding: 11px 28px;
 
   @media (min-width: @tablet-width) {
@@ -191,7 +165,11 @@
   }
 }
 
-.item-image-1000 {
+.catalog-item-image-1000 {
+  left: 31px;
+  top: 9px;
+
+
   @media (min-width: @tablet-width) {
     width: 168px;
     height: 200px;
@@ -285,7 +263,7 @@
   }
 }
 
-.weight-1000 {
+.catalog-weight-1000 {
   margin: 0 69px 0 0;
 
   @media (min-width: @tablet-width) {
@@ -361,7 +339,7 @@
   }
 }
 
-.description-rice {
+.catalog-description-rice {
   margin: 0 95px 0 0;
 
   @media (min-width: @tablet-width) {
@@ -375,7 +353,7 @@
   }
 }
 
-.flavour-fish {
+.catalog-flavour-fish {
   margin: 0 87px 0 0;
 
   @media (min-width: @tablet-width) {
@@ -462,9 +440,9 @@
   }
 }
 
-.button-wrapper {
+.catalog-button-wrapper {
   width: 280px;
-  margin: 0 auto 45px;
+  margin: 0 auto 44px;
 
   @media (min-width: @tablet-width) {
     width: 248px;
@@ -511,7 +489,7 @@
   }
 }
 
-.more-item {
+.catalog-more-item {
   position: relative;
   padding: 58px 0 0;
   width: 280px;
@@ -559,12 +537,7 @@
   }
 }
 
-.more__item-text--wrapper {
-  width: 167px;
-  margin: 0 0 87px 0;
-}
-
-.more-item-container {
+.catalog-more-item-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -575,7 +548,7 @@
   }
 }
 
-.more-item-title {
+.catalog-more-item-title {
   margin: 0 0 8px 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -595,7 +568,7 @@
   }
 }
 
-.more-item-description {
+.catalog-more-item-description {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -613,7 +586,7 @@
   }
 }
 
-.more-item-button-wrapper {
+.catalog-more-item-button-wrapper {
   width: 280px;
   margin: 0 auto;
 
@@ -626,7 +599,7 @@
   }
 }
 
-.more-item-button {
+.catalog-more-item-button {
   border: 0;
   background-color: #f2f2f2;
   color: #444444;
