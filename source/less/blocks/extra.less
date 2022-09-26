@@ -1,0 +1,243 @@
+.extra {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0;
+  }
+}
+
+.extra-label {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+  margin: 0 0 23px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 29px;
+    margin: 0 0 10px;
+  }
+}
+
+.extra-control-mark {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #cdcdcd;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #bababa;
+    content: "";
+    background: url("../img/form/svg/tick-arrow.svg") no-repeat center;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    border: 1px solid #bababa;
+    background: url("./img/form/svg/tick-arrow-disabled.svg") no-repeat center;
+  }
+
+  @media (min-width: @tablet-width) {
+
+    width: 40px;
+    height: 40px;
+    top: -3px;
+  }
+}
+
+.extra-checkbox[type="checkbox"]:checked+.extra-control-mark::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  background: url("../img/form/svg/tick-arrow.svg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.extra-checkbox:focus-within+.extra-control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
+}
+
+.extra-title {
+  position: relative;
+  margin: 0 0 41px 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 767px;
+    height: 2px;
+    background-color: #68b738;
+    display: block;
+    right: -650px;
+    top: 15px;
+
+    @media (min-width: @tablet-width) {
+      width: 1439px;
+      right: -985px;
+      top: 23px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 3300px;
+      right: -2026px;
+      top: 22px;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      width: 1439px;
+      height: 2px;
+      background-color: #68b738;
+      display: block;
+      left: -1478px;
+      top: 23px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 65px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 63px 0;
+  }
+}
+
+.extra-list {
+  margin: 0 0 37px 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 231px 231px;
+    column-gap: 114px;
+    row-gap: 32px;
+    margin: 0 0 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 57px;
+    column-gap: 95px;
+    grid-template-columns: 229px 228px 233px 221px 235px;
+  }
+}
+
+.extra-checkbox-label {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 0 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.extra-checkbox {
+  appearance: none;
+}
+
+.extra-button-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: 630px;
+    margin: 0 auto 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0;
+    margin: 0 auto 82px;
+  }
+}
+
+.extra-button {
+  margin: 0 0 8px 0;
+  background: #68b738;
+  border: 0;
+  height: 40px;
+  padding: 7px 44px;
+  color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 67px 0 0;
+    padding: 13px 45px;
+    height: 52px;
+    min-width: 282px;
+    font-size: 20px;
+    line-height: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 568px;
+    margin: 0 81px 0 0;
+  }
+}
+
+.extra-button-description {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}

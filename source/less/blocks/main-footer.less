@@ -20,7 +20,20 @@
 }
 
 .main-footer__logo {
+  position: relative;
   margin: 0 0 60px 0;
+
+  @media (max-width: @mobile-width-only) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 280px;
+      height: 1px;
+      right: -78px;
+      top: 51px;
+      background-color: #e6e6e6;
+    }
+  }
 
   img {
     width: 128px;
@@ -32,16 +45,32 @@
   }
 }
 
-.catenergy-social {
+.main-footer-catenergy-social {
   width: 128px;
 }
 
-.social__item {
+.main-footer__social {
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 280px;
+      height: 1px;
+      right: -68px;
+      top: 25px;
+      background-color: #e6e6e6;
+    }
+  }
+}
+
+.main-footer-social-item {
   position: relative;
   margin: 0 24px;
 }
 
-.social__item a {
+.main-footer-social-item a {
   position: absolute;
   top: 0;
   right: 0;
@@ -50,7 +79,7 @@
   margin: auto;
 }
 
-.social__list {
+.main-footer-social-list {
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -63,7 +92,7 @@
   }
 }
 
-.social__link {
+.main-footer-social-link {
   width: 28px;
   height: 22px;
   fill: #666666;
@@ -71,12 +100,12 @@
   margin: auto;
 }
 
-.social-svg {
+.main-footer-social-svg {
   width: 28px;
   height: 23px;
 }
 
-.copyright {
+.main-footer-copyright {
   width: 281px;
   display: flex;
   justify-content: space-between;
@@ -90,7 +119,7 @@
 }
 
 
-.copyright__htmlacademy {
+.main-footer-copyright__htmlacademy {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;

@@ -10,11 +10,12 @@
   <link rel="icon" sizes="32x32" href="favicon.ico">
   <link rel="icon" href="../img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="../fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="../fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/oswalregular.woff2" as="font" crossorigin="anonymous">
 </head>
 <!-- Header Start -->
 
-<body class="page__body">
+<body class="page__body page__body-bg">
   <header class="main-header">
     <div class="main-header__wrapper">
       <div class="main-header__logo-wrapper">
@@ -22,28 +23,28 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="../img/svg/tablet-logo.svg">
         <source media="(min-width: 768px)" srcset="../img/svg/tablet-logo.svg">
-        <img class="header-logo-picture" src="../img/svg/mobile-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
+        <img class="main-header-logo-picture" src="../img/svg/mobile-logo.svg" width="101" height="18" alt="Логотип Cat Energy">
     </picture>
     </a>
     <a href="" class="main-header__logo-text">
       <img src="../img/svg/text-logo.svg" width="33" height="37" alt="Cat Energy">
     </a>
   </div>
-  <!--для закрытия меню "main-nav--opened" заменить на "main-nav--closed"-->
+  <!--для закрытия меню "main-nav-opened" заменить на "main-nav-closed"-->
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item-active">
-            <a href="index.html" class="site-list__link">Главная</a>
+        <ul class="main-nav__list main-nav-site-list">
+          <li class="main-nav-site-list__item main-nav-site-list__item-active">
+            <a href="index.html" class="main-nav-site-list__link">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">Каталог продукции</a>
+          <li class="main-nav-site-list__item">
+            <a href="catalog.html" class="main-nav-site-list__link">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html" class="site-list__link">Подбор программы</a>
+          <li class="main-nav-site-list__item">
+            <a href="form.html" class="main-nav-site-list__link">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -76,17 +77,17 @@
     <section class="program-type">
       <div class="program-type__wrapper">
         <h2 class="visually-hidden">Виды программ</h2>
-        <div class="slim-wrapper">
-          <h3 class="slim-title">Похудение</h3>
-          <p class="slim-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
+        <div class="program-type-slim-wrapper">
+          <h3 class="program-type-slim-title">Похудение</h3>
+          <p class="program-type-slim-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
             на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="#" class="slim-catalog-link">Каталог SLIM</a>
+          <a href="#" class="program-type-slim-catalog-link">Каталог SLIM</a>
         </div>
-        <div class="pro-wrapper">
-          <h3 class="pro-title">Набор массы</h3>
-          <p class="pro-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+        <div class="program-type-pro-wrapper">
+          <h3 class="program-type-pro-title">Набор массы</h3>
+          <p class="program-type-pro-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы!</p>
-          <a href="#" class="pro-catalog-link">Каталог PRO</a>
+          <a href="#" class="program-type-pro-catalog-link">Каталог PRO</a>
         </div>
       </div>
     </section>
@@ -130,47 +131,47 @@
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
           изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="stats-wrapper">
-          <ul class="stats-list">
-            <li class="stats-item">
-              <p class="stats-item-value value-weight">5 кг</p>
-              <p class="stats-item-index index-weight">снижение <br> веса</p>
+        <div class="live-example-stats-wrapper">
+          <ul class="live-example-stats-list">
+            <li class="live-example-stats-item">
+              <p class="live-example-stats-item-value live-example-value-weight">5 кг</p>
+              <p class="live-example-stats-item-index live-example-index-weight">снижение <br> веса</p>
             </li>
-            <li class="stats-item">
-              <p class="stats-item-value value-days">60 дней</p>
-              <p class="stats-item-index index-days">затрачено времени</p>
+            <li class="live-example-stats-item">
+              <p class="live-example-stats-item-value live-example-value-days">60 дней</p>
+              <p class="live-example-stats-item-index live-example-index-days">затрачено времени</p>
             </li>
           </ul>
-          <div class="cost">
-            <p class="cost__value">Затраты на питание:</p>
-            <p class="cost__value-price">15 000 руб.</p>
+          <div class="live-example-cost">
+            <p class="live-example-cost__value">Затраты на питание:</p>
+            <p class="live-example-cost__value-price">15 000 руб.</p>
           </div>
         </div>
       </div>
-      <span class="picture-background"></span>
-      <div class="example-picture-wrapper">
-        <div class="picture-before">
+      <span class="live-example-picture-background"></span>
+      <div class="live-example-picture-wrapper">
+        <div class="live-example-picture-before">
           <picture>
         <source media="(min-width: 1440px)" srcset="../img/png/cat-slider-before-desktop.png 1x, ../img/png/cat-slider-before-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="../img/png/cat-slider-before-tablet.png 1x, ../img/png/cat-slider-before-tablet@2x.png 2x">
-        <img class="image-before" src="../img/png/cat-slider-before.png" srcset="../img/png/cat-slider-before@2x.png 2x" width="200" height="256" alt="Фото кота до">
+        <img class="live-example-image-before" src="../img/png/cat-slider-before.png" srcset="../img/png/cat-slider-before@2x.png 2x" width="200" height="256" alt="Фото кота до">
     </picture>
         </div>
-        <div class="range-slider">
-          <div class="range-slider__toggle">
-            <button class="range-slider__button" type="button">
+        <div class="live-example-range-slider">
+          <div class="live-example-range-slider__toggle">
+            <button class="live-example-range-slider__button" type="button">
               <svg width="40" height="40">
                 <use href="../img/svg/sprite.svg#range-slider-button"></use>
               </svg>
             </button>
-            <div class="range-slider__track"></div>
+            <div class="live-example-range-slider__track"></div>
         </div>
         </div>
-        <div class="picture-after">
+        <div class="live-example-picture-after">
           <picture>
             <source media="(min-width: 1440px)" srcset="../img/png/cat-slider-after-desktop.png 1x, ../img/png/cat-slider-after-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="../img/png/cat-slider-after-tablet.png 1x, ../img/png/cat-slider-after-tablet@2x.png 2x">
-            <img class="image-after" src="../img/png/cat-slider-after.png" srcset="../img/png/cat-slider-after@2x.png 2x" width="200" height="256" alt="Фото кота после">
+            <img class="live-example-image-after" src="../img/png/cat-slider-after.png" srcset="../img/png/cat-slider-after@2x.png 2x" width="200" height="256" alt="Фото кота после">
         </picture>
         </div>
       </div>
@@ -193,7 +194,7 @@
         <source media="(min-width: 768px)" srcset="../img/png/location-point-tablet.png">
       <img src="../img/png/location-point.png" width="320" height="362" alt="Локация магазина на карте" class="location-point-image">
     </picture>
-      <iframe class="iframe-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661209436689!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="location-point-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661209436689!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <!-- Main End -->
@@ -201,39 +202,39 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
-        <img class="catenergy-social" src="../img/svg/text-logo.svg" width="128" height="24" alt="Cat Energy">
+        <img class="main-footer-catenergy-social" src="../img/svg/text-logo.svg" width="128" height="24" alt="Cat Energy">
       </div>
       <div class="main-footer__social social">
         <span class="visually-hidden">Наши Социальные Сети</span>
-        <ul class="social__list">
-          <li class="social__item">
+        <ul class="main-footer-social-list">
+          <li class="main-footer-social-item">
             <span class="visually-hidden">Мы Вконтакте</span>
-            <a href="vk.com/htmlacademy" class="social__link social__link--vkontakte">
-              <svg class="social-svg" width="28" height="22">
+            <a href="vk.com/htmlacademy" class="main-footer-social-link">
+              <svg class="main-footer-social-svg" width="28" height="22">
                 <use href="../img/svg/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="main-footer-social-item">
             <span class="visually-hidden">Мы на ютуб</span>
-            <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social__link social__link--youtube">
-              <svg class="social-svg" width="28" height="22" >
+            <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="main-footer-social-link">
+              <svg class="main-footer-social-svg" width="28" height="22" >
                 <use href="../img/svg/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
-          <li class="social__item">
+          <li class="main-footer-social-item">
             <span class="visually-hidden">Мы в телеграм</span>
-            <a href="https://t.me/s/htmlacademy" class="social__link social__link--telegram">
-              <svg class="social-svg" width="28" height="22">
+            <a href="https://t.me/s/htmlacademy" class="main-footer-social-link">
+              <svg class="main-footer-social-svg" width="28" height="22">
                 <use href="../img/svg/sprite.svg#icon-telegram"></use>
               </svg>
               </a>
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
-        <a href="https://htmlacademy.ru" class="copyright__htmlacademy">HTML Academy</a>
+      <div class="main-footer__copyright main-footer-copyright">
+        <a href="https://htmlacademy.ru" class="main-footer-copyright__htmlacademy">HTML Academy</a>
         <img src="../img/svg/html-academy-logo.svg" width="27" height="34" alt="Логотип HTMLAcademy">
       </div>
     </div>

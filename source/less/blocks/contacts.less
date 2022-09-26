@@ -1,0 +1,250 @@
+.contacts {
+  border: 0;
+  padding: 0;
+  width: 330px;
+  margin: 0 auto 12px;
+
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 65px;
+    padding: 0;
+  }
+}
+
+.contacts-title {
+  width: 187px;
+  position: relative;
+  margin: 0 0 33px 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 767px;
+    height: 2px;
+    background-color: #68b738;
+    display: block;
+    right: -780px;
+    top: 15px;
+
+    @media (min-width: @tablet-width) {
+      width: 1439px;
+      right: -1247px;
+      top: 23px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 3300px;
+      right: -2633px;
+      top: 22px;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      width: 1439px;
+      height: 2px;
+      background-color: #68b738;
+      display: block;
+      left: -1439px;
+      top: 23px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -1479px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin: 0 0 80px 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 0 0 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0 0 75px 0;
+  }
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    align-items: center;
+    width: 708px;
+    padding: 0 0 0 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.contacts-wrapper-email {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/form/svg/email-icon.svg") no-repeat center;
+    width: 50px;
+    height: 53px;
+    z-index: 1;
+    right: 52px;
+    top: -3px;
+
+    @media (min-width: @tablet-width) {
+      right: 80px;
+      top: 1px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 85px;
+      top: 0;
+    }
+  }
+}
+
+.contacts-wrapper-phone {
+  position: relative;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/form/svg/phone-icon.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    top: 15px;
+    right: 64px;
+
+    @media (min-width: @tablet-width) {
+      right: 94px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 20px;
+      top: 17px;
+    }
+  }
+}
+
+.contacts-wrapper {
+  position: relative;
+  margin: 0 0 14px 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    margin: 0 0 22px;
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 647px;
+    margin: 0 2px 0 0;
+  }
+}
+
+.contact {
+  margin: 0 7px 0 0;
+  text-transform: uppercase;
+  color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 18px 0 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 22px 0 0;
+    white-space: nowrap;
+  }
+}
+
+.contacts-input {
+  position: relative;
+  border: 1px solid #cdcdcd;
+  padding: 12px 13px 7px 13px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 13px 6px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 1px solid #444444;
+    outline: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 20px 14px 16px;
+  }
+}
+
+.contacts-input-email {
+  width: 190px;
+
+  @media (min-width: @tablet-width) {
+    width: 511px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 78px 0 0;
+    width: 486px;
+  }
+}
+
+
+.contacts-input-tel {
+  width: 173px;
+
+  @media (min-width: @tablet-width) {
+    width: 488px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 429px;
+  }
+}
